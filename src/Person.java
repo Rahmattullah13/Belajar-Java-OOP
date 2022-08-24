@@ -16,13 +16,21 @@ class Person {
     String address;
     final String country = "Indonesia";
 
-    Person(String paramName, String paramAddress){
-        name = paramName;
-        address = paramAddress;
+    Person(String Name, String Address){
+        this.name = Name;
+        this.address = Address;
     }
 
-    void sayHello(String paramName) {
-        System.out.println("Hello " + paramName + ", My name is " + name);
+    Person(String paramName){
+        this(paramName,null);
+    }
+
+    Person(){
+        this(null);
+    }
+
+    void sayHello(String Name) {
+        System.out.println("Hello " + Name + ", My name is " + this.name);
     }
 
 }
