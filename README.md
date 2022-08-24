@@ -1,5 +1,5 @@
 # Sumber Belajar
-##### Youtube Channel Proggrammer Zaman Now [Link ke Youtube](https://www.youtube.com/watch?v=f3ZhNnvtV-w&list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX&index=3&t=1240s)
+##### Youtube Channel Programmer Zaman Now [Link ke Youtube](https://www.youtube.com/watch?v=f3ZhNnvtV-w&list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX&index=3&t=1240s)
 
 # Apa itu Object Oriented Programming?
 
