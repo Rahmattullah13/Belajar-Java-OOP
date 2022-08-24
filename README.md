@@ -108,8 +108,9 @@ secara otomatis akan dimiliki oleh class Child.
 - Untuk melakukan pewarisan, di class Child, kita harus menggunakan kata kunci extends 
 lalu diikuti dengan nama class Parent nya.
 
-Example : 
-```
+Example :
+
+```Java
 class Manager {
     String name;
 
