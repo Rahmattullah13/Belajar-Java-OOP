@@ -158,3 +158,107 @@ tapi secara otomatis java akan membuat class kita extends Object.
 - Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk.
 - Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
 - Polymorphism erat hubungannya dengan Inheritance.
+
+# Type Check & Casts
+
+- Sebelumnya kita sudah tau cara melakukan konversi tipe data (casts) di tipe data primitif.
+- Casts juga bisa digunakan untuk tipe data bukan primitif.
+- Namun agar aman, sebelum melakukan casts, pastikan kita melakukan type check(Pengecekan tipe data),
+dengan menggunakan kata kunci instanceof
+- Hasil operator instanceof adalah boolean, true jika tipe data sesuai, false juka tidak sesuai.
+
+# Variable Hiding
+
+- Variable Hiding merupakan masalah yang terjadi ketika kita membuat nama field yang sama di class child
+dengan nama field di class parent.
+- Tidak ada yang namanya field overriding, ketika kita buat nama field di class, class itu berarti variable hiding.
+- Untuk mengatasi variable hiding, caranya kita bisa menggunakan super keyword.
+- Yang membedakan variable hiding dan method overriding adalah ketika sebuah object di casts.
+- Saat Object di Casts, method akan tetap mengakses method overriding,
+namun variable akan mengakses variable yang ada di class-nya.
+
+# Package
+
+- Saat kita membuat aplikasi, bisa dipastikan kita akan membuat banyak sekali class.
+- Jika class terlalu banyak, kadang akan menyulitkan kita untuk mencari atau mengklasifikasikan jenis-jenis class.
+- Java memiliki fitur package, yaitu fitur mirip folder/direktori 
+dimana kita bisa menyimpan class-class kita di dalam packge.
+- Sama seperti folder/direktori, package juga bisa nested, kita bisa menggunakan tanda titik (.) 
+untuk membuat nested package.
+- Ketika kita menyimpan class di dalam package, maka diatas file Java nya, kita wajib menyebutkan nama package-nya.
+
+```java
+// Nama Package
+package rifki.rahmattullah.data;
+
+class Product {
+
+    String name;
+    int price;
+
+    Product(String name, int price){
+        this.name = name;
+        this.price = price;
+    }
+}
+```
+
+# Access Modifier
+
+- Access Modifier adalah kemampuan membuat class field, method dan constructor dapat diakses dari mana saja.
+- Sebelumnya kita sudah melihat 2 access modifier, yaitu public dan default(no-modiefier).
+- Sekarang kita bahas access modifier lainnya.
+
+| Modifier    | Class  | Package  | SubClass  | World  |
+|:------------|:------:|:--------:|:---------:|:------:|
+| public      |   Y    |    Y     |     Y     |   Y    |
+| protected   |   Y    |    Y     |     Y     |   N    |
+| no modifier |   Y    |    Y     |     N     |   N    |
+| private     |   Y    |    N     |     N     |   N    |
+
+**Y = YES**
+
+**N = NO**
+
+## Public Class
+
+- Saat kita membuat public class, kita hanya bisa membuat 1 public class di 1 file java.
+- Selain itu, nama public class harus sama dengan nama file.
+- Karena itu disarankan untuk membuat file baru jika ingin membuat class.
+
+```java
+// Nama Package
+package rifki.rahmattullah.data;
+
+// Bisa diakes dimana saja.
+public class Product {
+
+    // Hanya bisa diakses dipackage data saja.
+    protected String name;
+    protected int price;
+
+    Product(String name, int price){
+        this.name = name;
+        this.price = price;
+    }
+}
+```
+
+# Import
+
+- Import adalah kemampuan untuk menggunakan class yang berbeda di package yang berbeda.
+- Syarat class yang bisa digunakan jika package nya berbeda adalah class yang harus public.
+- Jika kita ingin menimport semua class di dalam sebuah package, kita bisa menggunakan tanda bintang(*).
+- contoh: 
+```java
+import rifki.rahmattullah.data.*;
+```
+
+# Default Import
+
+- Secara default, semua class yang ada di package java.lang suda auto import,
+jadi kita tidak perlu melakukan import secara manual.
+- Contoh class String, Integer, Long, Boolean, dll, terdapat di package java.lang.
+Oleh karena itu, kita tidak perlu meng-import nya secara manual.
+
+# Abstract Class
