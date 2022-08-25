@@ -144,3 +144,16 @@ kata kunci super juga bisa digunakan untuk mengakses constructor
 - Namun syaratnya untuk mengakses parent class constructor, kita harus mengaksesnya didalam class child constructor.
 - Jika sebuah class parent tidak memiliki constructor yang tidak ada parameternya(tidak memiliki default constructor),
 maka class child wajib mengakses constructor class parent tersebut.
+
+# Object Class
+
+- Di Java, setiap class yang kita buat secara otomatis adalah turunan dari class Object.
+- Walaupun tidak secara langsung kita eksplisit menyebutkan extends Object, 
+tapi secara otomatis java akan membuat class kita extends Object.
+- Bisa dikatakan class Object adalah superclass untuk semua class yang ada di Java.
+
+# Polymorphism
+
+- Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk.
+- Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain.
+- Polymorphism erat hubungannya dengan Inheritance.

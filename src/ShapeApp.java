@@ -4,6 +4,7 @@ public class ShapeApp {
         var shape =  new Shape();
         System.out.println(shape.getCorner());
 
+        // Mengakses parent
         var rectangle = new Rectangle();
         System.out.println(rectangle.getCorner());
         System.out.println(rectangle.getParentCorner());
