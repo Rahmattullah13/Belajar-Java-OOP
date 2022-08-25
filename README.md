@@ -262,3 +262,54 @@ jadi kita tidak perlu melakukan import secara manual.
 Oleh karena itu, kita tidak perlu meng-import nya secara manual.
 
 # Abstract Class
+
+- Saat kita membuat class, kita bisa menjadikan sebuah class sebagai abstract class.
+- Abstract class artinya, class tersebut tidak bisa dibuat sebagai object secara langsung,
+hanya bisa diturunkan.
+- Untuk membuat Abstract Class, kita bisa menggunakan kata kunci abstract sebelum kata kunci class.
+- Dengan demikian abstract class bisa kita gunakan sebagai kontrak untuk class child.
+
+# Abstract Method
+
+- Saat kita membuat class yang abstract, kita bisa membuat abstract method juga di dalam class abstract tersebut.
+- Saat kita membuat sebuah abstract method, kita tidak boleh membuat block method untuk method tersebut.
+- Artinya, abstract method wajib di override di class child.
+- Abstract method tidak boleh memiliki access modifier private.
+
+# Encapsulation
+
+- Encapsulation artinya memastikan data sensitif sebuah object tersembunyi dari akses luar.
+- Hal ini bertujuan agar kita bisa menjaga data sebuah object tetap baik dan valid.
+- Untuk mencapai ini, biasanya kita akan membuat semua field menggunakan access modifier private,
+sehingga tidak bisa diakses atau diubah dari luar.
+- Agar bisa diubah, kita bisa menyediakan method untuk mengubah dan mendapatkan field tersebut.
+
+## Getter and Setter
+
+- Di java, proses encapsulation sudah dibuat standarisasinya, dimana kita bisa menggunakan Getter and Setter method.
+- Getter adalah function yang digunakan untuk mengambil data field.
+- Setter adalah function yang digunakan untuk mengubah data field.
+
+| Tipe Data | Getter Method |     Setter Method      |
+|:----------|:-------------:|:----------------------:|
+| boolean   |    isXxx()    | setXxx(boolean value)  |
+| primitif  |   getXxx()    | setXxx(primitif value) |
+| Object    |   getXxx()    |  setXxx(Object value)  |
+
+
+# Interface
+
+- Sebelumnya, kita sudah tahu bahwa abstract class bisa kita gunakan sebagai kontrak untuk class child nya.
+- Namun sebenarnya yang lebih tepat untuk kontrak adalah interface.
+- Jangan salah sangka bahwa interface disini bukanlah User Interface(GUI).
+- Interface mirip seperti abstract class, yang membedakan adalah di interface, 
+semua method otomatis abstract, tidak memiliki block.
+- Di Interface kita tidak boleh memiliki field, kita hanya boleh memiliki constrant (field yang tidak bisa diubah).
+- Untuk mewariskan interface, kita tidak menggukanan kata kunci extends, melainkan implements.
+
+# Interface Inheritance
+
+- Sebelumnya kita sudah tahu kalau di Java, Child Class hanya bisa mempunyai 1 Class Parent.
+- Namun berbeda dengan Interface, sebuah Child Class bisa implement lebih dari 1 Interface.
+- Bahkan Interface pun bisa implement Interface-Interface lain, bisa lebih dari 1.
+- Namun jika Interface ingin mewarisi Interface lain, kita menggunakan kata kunci extends, bukan implements.
