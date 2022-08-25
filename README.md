@@ -1,5 +1,5 @@
 # Sumber Belajar
-##### Youtube Channel Proggrammer Zaman Now [Link ke Youtube](https://www.youtube.com/watch?v=f3ZhNnvtV-w&list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX&index=3&t=1240s)
+##### Youtube Channel Programmer Zaman Now [Link ke Youtube](https://www.youtube.com/watch?v=f3ZhNnvtV-w&list=PL-CtdCApEFH-p_Q2GyK4K3ORoAT0Yt7CX&index=3&t=1240s)
 
 # Apa itu Object Oriented Programming?
 
@@ -108,8 +108,9 @@ secara otomatis akan dimiliki oleh class Child.
 - Untuk melakukan pewarisan, di class Child, kita harus menggunakan kata kunci extends 
 lalu diikuti dengan nama class Parent nya.
 
-Example : 
-```
+Example :
+
+```Java
 class Manager {
     String name;
 
