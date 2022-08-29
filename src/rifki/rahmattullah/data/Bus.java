@@ -1,21 +1,26 @@
 package rifki.rahmattullah.data;
 
-// Contoh Interface, kita wajib meng-override semua method nya.
-public class Avanza implements Car{
+public class Bus implements Car{
 
     public void drive() {
-        System.out.println("Avanza drive");
+        System.out.println("Bus Drive");
     }
 
     public int getTier() {
-        return 4;
+        return 8;
     }
 
     public String getBrand() {
-        return "Toyota";
+        return "HINO";
     }
 
     public boolean isMaintenance() {
         return false;
+    }
+
+
+    // Override Default Method
+    public boolean isBig() {
+        return true;
     }
 }

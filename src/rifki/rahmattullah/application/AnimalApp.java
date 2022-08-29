@@ -1,5 +1,6 @@
 package rifki.rahmattullah.application;
 
+import rifki.rahmattullah.annotation.Fancy;
 import rifki.rahmattullah.data.Animal;
 import rifki.rahmattullah.data.Cat;
 
@@ -8,6 +9,7 @@ import rifki.rahmattullah.data.Cat;
  * kita tinggal bikin abstract method di abstract class nya.
  */
 
+@Fancy(name = "AnimalApp", tags = {"Application", "Java"})
 public class AnimalApp {
     public static void main(String[] args) {
 
